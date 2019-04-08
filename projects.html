@@ -1,0 +1,482 @@
+<style>body, html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  color: #333639;
+  font-family: 'Montserrat', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin:0;
+  padding: 0;
+}
+#welcome-section {
+ background: rgba(150, 150, 100, 0.5);
+}
+.header-h1 {
+  margin: 10px;;
+  padding: 0;
+  font-size: 32pt;
+
+}
+.header-helper-text {
+  text-align: center;
+  display: block;
+  color: rgba(20, 20, 20, 0.6);
+  font-size: 14pt;
+} 
+.welcome-container {
+  padding: 44px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 4px;
+  background: rgba(200, 200, 200, 0.4);
+}
+#welcome-section:after {
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+  background: url("https://images3.alphacoders.com/868/thumb-1920-86839.jpg");
+  background-size: cover;
+  background-position: bottom;
+}
+.main-section {
+  height: 100vh;
+  width: 100%;
+}
+.scroll-down-button {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.scroll-down-button a {
+  text-decoration: none;
+  color: white;
+  padding: 15px 15px 15px 15px;
+  font-size: 16pt;
+}
+#about {
+  background: #f7b26c; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover, #f7b26c 0%, #d15a27 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover, #f7b26c 0%,#d15a27 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center, #f7b26c 0%,#d15a27 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7b26c', endColorstr='#d15a27',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.container {
+  max-width: 800px;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.media {
+  margin: auto;
+}
+.media-image img {
+  border-radius: 50%;
+  border: 5px solid #333639;
+}
+.media-image {
+  margin: auto;
+  width: 150px;
+}
+.media-header {
+  text-align: center; 
+}
+.media-header h1 {
+  margin-top: 15px;
+}
+.media-description {
+  text-align: justify;
+}
+.media-skills {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+.skill {
+  background: transparent;
+}
+.skill-image {
+  text-align: center;
+  font-size: 24pt;
+  padding: 10px;
+}
+.skill h4 {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-size: 14pt;
+}
+.skill-circle-full {
+  background: #333639;
+}
+.skill-points ul {
+  list-style: none;
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+}
+.skill-point {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.skill-circle-open {
+  width: 8px;
+  height: 8px;
+  border: 2px solid #333639;
+}
+#projects {
+  background-color: #F4F4F4;
+}
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+.project {
+  background: white;
+  padding: 5px;
+  transition: background-color 200ms linear;
+}
+.project-image {
+  
+}
+.project-image img {
+  width: 100%;
+  background-size: cover;
+}
+.project-title h5 {
+  margin: 10px;
+  padding: 0;
+  text-align: center;
+  font-size: 12pt;
+  border-bottom: 1px solid #333639;
+  padding-bottom: 12px;
+}
+.project-tags ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  float: right;
+}
+.project-tags ul li {
+  display: inline-block;
+  font-size: 10pt;
+  background: #d15a27;
+  border-radius: 2px;
+  padding: 4px;
+  color: white;
+  font-weight: 600;
+}
+.project a {
+  color: #333639;
+  text-decoration: none;
+}
+.project:hover {
+  background-color: #e3e3e3;
+}
+#contact {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6b6b6b+1,333639+100 */
+background: #6b6b6b; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover, #6b6b6b 1%, #333639 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover, #6b6b6b 1%,#333639 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center, #6b6b6b 1%,#333639 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b6b6b', endColorstr='#333639',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.contact-container {
+  text-align: center;
+}
+.contact-container h1 {
+  color: white;
+  font-size: 28pt;
+}
+.contact-container input[type="text"] {
+  border: none;
+  margin: 0;
+  padding: 0;
+  font-size: 18pt;
+  padding: 10px;
+  color: #d15a27;
+  padding-left: 25px;
+  border-radius: 50px;
+  margin-top: 15px;
+  -webkit-box-shadow: 0px 0px 26px 2px rgba(0,0,0,0.6);
+  -moz-box-shadow: 0px 0px 26px 2px rgba(0,0,0,0.6);
+  box-shadow: 0px 0px 26px 2px rgba(0,0,0,0.6);
+}
+.contact-social h1 {
+  margin-top: 40px;
+}
+.contact-social ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 15px;
+}
+.contact-social ul li {
+  display: inline-block;
+}
+.contact-social ul li a {
+  color: white;
+  font-size: 24pt;
+  padding: 10px;
+}
+.contact-social ul li a:hover {
+  color: #d15a27;
+}
+
+#navbar {
+  position: fixed;
+  width: 100%;
+  background: white;
+  z-index: 10;
+  height: 50px;
+  background: #00000094;
+}
+#navbar a {
+  color: white;
+  text-decoration: none;
+  float: right;
+  margin-right: 24px;
+  line-height: 50px;
+}
+@media screen and (max-width: 850px) {
+  .container {
+    max-width: 600px;
+  }
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 650px) {
+    .container {
+    max-width: 400px;
+  }
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}</style>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<nav id="navbar">
+  <a href="index.html">Home</a>
+</nav>
+
+  </section>
+  <section id="projects" class="main-section">
+    <div class="container">
+      <h2>Web Applications</h2>
+      <hr>
+      <div class="projects">
+        <div class="project project-tile">
+          <a target="_blank" href="https://agile-headland-13088.herokuapp.com/">
+
+            <div class="project-image">
+              <img src="images/hero.PNG">
+            </div>
+            <div class="project-title">
+              <h5>Hero Squad</h5>
+            </div>
+            <div class="project-tags">
+              <ul>
+                <li>#css</li>
+                <li>#js</li>
+                <li>#Angular</li>
+              </ul>
+            </div>
+          </a>
+        </div>
+        <div class="project project-tile">
+          <a target="_blank" href="https://dutdavid.github.io/github/">
+
+            <div class="project-image">
+              <img src="images/git.PNG">
+            </div>
+            <div class="project-title">
+              <h5>Github</h5>
+            </div>
+            <div class="project-tags">
+              <ul>
+                <li>#css</li>
+                <li>#js</li>
+                <li>#Angular</li>
+              </ul>
+            </div>
+          </a>
+        </div>
+        <div class="project project-tile">
+          <a target="_blank" href="https://young-fortress-28186.herokuapp.com/">
+
+            <div class="project-image">
+              <img src="images/salon.PNG">
+            </div>
+            <div class="project-title">
+              <h5>Hair Salon</h5>
+            </div>
+            <div class="project-tags">
+              <ul>
+                <li>#html</li>
+                <li>#css</li>
+                <li>#js</li>
+              </ul>
+            </div>
+          </a>
+        </div>
+        <div class="project project-tile">
+            <a target="_blank" href="https://quiet-cliffs-54919.herokuapp.com/">
+  
+              <div class="project-image">
+                <img src="images/tracker.PNG">
+              </div>
+              <div class="project-title">
+                <h5>Wildlife Tracker</h5>
+              </div>
+              <div class="project-tags">
+                <ul>
+                  <li>#html</li>
+                  <li>#css</li>
+                  <li>#js</li>
+                </ul>
+              </div>
+            </a>
+          </div>
+          <div class="project project-tile">
+            <a target="_blank" href="https://dutdavid.github.io/quote/">
+  
+              <div class="project-image">
+                <img src="images/quotes.PNG">
+              </div>
+              <div class="project-title">
+                <h5>Quote</h5>
+              </div>
+              <div class="project-tags">
+                <ul>
+                  <li>#html</li>
+                  <li>#css</li>
+                  <li>#js</li>
+                </ul>
+              </div>
+            </a>
+          </div>
+          <div class="project project-tile">
+            <a target="_blank" href="https://dutdavid.github.io/as1/">
+  
+              <div class="project-image">
+                <img src="images/yolomy.PNG">
+              </div>
+              <div class="project-title">
+                <h5>Fashion</h5>
+              </div>
+              <div class="project-tags">
+                <ul>
+                  <li>#html</li>
+                  <li>#css</li>
+                  <li>#js</li>
+                </ul>
+              </div>
+            </a>
+          </div>
+        
+      </div>
+    </div>
+  </section>
+  <section id="projects" class="main-section">
+    <div class="container">
+      <h2>Mobile Applications</h2>
+      <hr>
+      <div class="projects">
+        <div class="project project-tile">
+          <a target="_blank" href="">
+
+            <div class="project-image">
+              <img src="https://via.placeholder.com/300x150">
+            </div>
+            <div class="project-title">
+              <h5>Book Store</h5>
+            </div>
+            <div class="project-tags">
+              <ul>
+                <li>#Java</li>
+                <li>#Android</li>
+              </ul>
+            </div>
+          </a>
+        </div>
+        <div class="project project-tile">
+          <a target="_blank" href="">
+
+            <div class="project-image">
+              <img src="https://via.placeholder.com/300x150">
+            </div>
+            <div class="project-title">
+              <h5>My Games</h5>
+            </div>
+            <div class="project-tags">
+              <ul>
+                <li>#Java</li>
+                <li>#Android</li>
+              </ul>
+            </div>
+          </a>
+        </div>
+        <div class="project project-tile">
+          <a target="_blank" href="">
+
+            <div class="project-image">
+              <img src="https://via.placeholder.com/300x150">
+            </div>
+            <div class="project-title">
+              <h5>Game Info</h5>
+            </div>
+            <div class="project-tags">
+              <ul>
+                <li>#Java</li>
+                <li>#Android</li>
+              </ul>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="main-section">
+    <div class="container">
+      <div class="contact-container">
+        <div class="contact-mail">
+          <h1>Send me an Email</h1>
+          <form>
+            <input type="text" placeholder="E-Mail Address">
+          </form>
+        </div>
+        <div class="contact-social">
+          <h1>Social Links</h1>
+          <ul>
+            <li>
+              <a target="_blank" id="profile-link" href="https://codepen.io/vdorfer/"><i class="fa fa-codepen"></i></a>
+            </li>
+            <li>
+              <a target="_blank" href="https://github.com/"><i class="fa fa-github"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </div>
